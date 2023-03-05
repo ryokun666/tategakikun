@@ -1,10 +1,9 @@
 .main {
-  font-size: 24px;
   width: 100vw;
   /* outline: dashed 1px black; */
   /* 準備 */
   position: relative;
-  min-height: 97vh;
+  min-height: auto;
   overflow: hidden;
   text-align: center;
   list-style-type: none;
@@ -14,7 +13,7 @@
 
 .wrapper {
   margin: 10px;
-  padding: 50px 0;
+  padding: 10px 0;
   background-color: #fff;
   border-radius: 30px;
   font-size: 1rem;
