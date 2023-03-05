@@ -1,0 +1,27 @@
+{
+  "name": "tategakikun",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev-test": "next dev -H 192.168.0.65",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev:proxy": "next dev -p 3001 & local-ssl-proxy --key localhost-key.pem --cert localhost.pem --source 3000 --target 3001"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.10",
+    "clipboard-event": "^1.6.0",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.1",
+    "html-react-parser": "^3.0.9",
+    "next": "13.2.1",
+    "react": "18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "18.2.0",
+    "reactstrap": "^9.1.6"
+  }
+}

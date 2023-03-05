@@ -1,0 +1,28 @@
+.resultArea {
+    background-color: azure;
+    margin: 20px;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.dispNone {
+    display: none;
+}
+
+.resultText {
+    width: fit-content;
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    color: #474747;
+    background: whitesmoke;
+    /*背景色*/
+    border-left: double 7px var(--blue);
+    /*左線*/
+    border-right: double 7px var(--blue);
+    /*右線*/
+}
+
+.textArea {
+    /*背景色*/
+    /*影*/
+}
