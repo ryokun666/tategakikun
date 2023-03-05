@@ -15,7 +15,6 @@ const CopyToClipboardButton = (str) => {
 
   return (
     <>
-      {console.log(str)}
       <Button
         className={str.str.length ? styles.dispBlock : styles.dispNone}
         // className={styles.dispBlock }

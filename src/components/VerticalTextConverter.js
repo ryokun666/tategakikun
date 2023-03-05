@@ -48,7 +48,7 @@ function VerticalTextConverter() {
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 4, width: "15ch" },
+          "& .MuiTextField-root": { m: 5, width: "25ch" },
         }}
         noValidate
         autoComplete="off"
@@ -59,11 +59,13 @@ function VerticalTextConverter() {
             id="text-area"
             label="テキストを入力してね"
             multiline
-            maxRows={4}
-            className={styles.textArea}
+            lg={{ display: "flex", maxWidth: 360 }}
+            maxRows={10}
+            rows={3}
           />
         </div>
       </Box>
+
       <div
         id="resultText"
         className={covStr.length ? styles.resultText : styles.dispNone}

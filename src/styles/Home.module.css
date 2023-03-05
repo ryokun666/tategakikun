@@ -28,15 +28,17 @@
 
 
 .container {
-  width: 60vw;
+  width: 30vw;
+  min-width: 200px;
   padding: 0.2em 0.5em;
   margin: 0 auto;
   margin-top: var(--space-sm);
-  ;
   background: var(--blue);
   box-shadow: 0px 0px 0px 10px var(--blue);
   border: dashed 2px white;
 }
+
+
 
 .container li {
   text-align: left;

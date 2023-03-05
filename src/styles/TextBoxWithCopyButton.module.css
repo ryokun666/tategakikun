@@ -3,7 +3,13 @@
     display: none;
 }
 
-.dispBlock{
-    display: block;
-    margin: 0 auto;
+
+
+.textArea{
+margin: 0 auto;
+
+}
+
+.textBox{
+    margin: var( --space-md) 0;
 }
