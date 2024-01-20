@@ -49,7 +49,7 @@ function VerticalTextConverter() {
       <Box
         component="form"
         sx={{
-          "& .MuiTextField-root": { m: 5, width: "25ch" },
+          "& .MuiTextField-root": { m: 3, width: "30ch" },
         }}
         noValidate
         autoComplete="off"

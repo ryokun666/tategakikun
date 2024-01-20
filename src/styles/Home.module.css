@@ -38,20 +38,17 @@
   margin-top: 20px;
 }
 
-
-
 .container {
-  width: 30vw;
+  width: 90%;
   min-width: 200px;
   padding: 0.2em 0.5em;
   margin: 0 auto;
   margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
   background: var(--blue);
   box-shadow: 0px 0px 0px 10px var(--blue);
   border: dashed 2px white;
 }
-
-
 
 .container li {
   text-align: left;
