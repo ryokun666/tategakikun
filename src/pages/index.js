@@ -2,8 +2,15 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import VerticalTextConverter from "@/components/VerticalTextConverter";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupVisible(!isPopupVisible);
+  };
+
   return (
     <>
       <Head>
@@ -13,6 +20,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className={styles.topAd}>
         <a href="https://px.a8.net/svt/ejp?a8mat=3YYLXV+BUADWY+4R6I+61Z81">
           <img
@@ -62,7 +70,7 @@ export default function Home() {
             </ol>
           </div>
 
-          <VerticalTextConverter />
+          <VerticalTextConverter setIsPopupVisible={setIsPopupVisible} />
         </div>
         {/* 広告1 */}
         <div>
@@ -108,6 +116,29 @@ export default function Home() {
           alt=""
         ></img>
       </main>
+      {/* 広告ポップアップ */}
+      {isPopupVisible && (
+        <div className={styles.overlay}>
+          <div className={styles.popup}>
+            <button
+              className={styles.closeButton}
+              onClick={togglePopup}
+            ></button>
+            <a
+              href="https://px.a8.net/svt/ejp?a8mat=3YYLXV+BUADWY+4R6I+63OY9"
+              rel="nofollow"
+            >
+              <img
+                border="0"
+                width="336"
+                height="280"
+                alt=""
+                src="https://www24.a8.net/svt/bgt?aid=240120211716&wid=001&eno=01&mid=s00000022185001025000&mc=1"
+              />
+            </a>
+          </div>
+        </div>
+      )}
     </>
   );
 }
