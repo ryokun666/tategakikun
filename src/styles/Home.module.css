@@ -8,17 +8,20 @@
   text-align: center;
   list-style-type: none;
   background-color: var(--blue);
-  margin-top: 60px;
 }
 
 .topAd {
   position: fixed;
-  top: 0;
+  bottom: -5px;
   width: 100%;
   z-index: 1000;
 }
 
 .topAd img {
+  width: 100%;
+}
+
+.topAd a {
   width: 100%;
 }
 
@@ -32,6 +35,7 @@
 
 .wrapper img {
   width: 100%;
+  height: auto;
 }
 
 .title {
