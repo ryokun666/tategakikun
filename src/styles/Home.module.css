@@ -1,14 +1,25 @@
 .main {
   width: 100vw;
-  /* outline: dashed 1px black; */
-  /* 準備 */
+  max-width: 960px;
+  margin: 0 auto;
   position: relative;
   min-height: auto;
   overflow: hidden;
   text-align: center;
   list-style-type: none;
-
   background-color: var(--blue);
+  margin-top: 60px;
+}
+
+.topAd {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topAd img {
+  width: 100%;
 }
 
 .wrapper {
@@ -19,9 +30,12 @@
   font-size: 1rem;
 }
 
-.title {
-  font-family: "RocknRoll One", sans-serif;
+.wrapper img {
+  width: 100%;
+}
 
+.title {
+  margin-top: 20px;
 }
 
 

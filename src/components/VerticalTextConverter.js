@@ -15,6 +15,7 @@ function VerticalTextConverter() {
     const input = event.target.value;
     const newStr = input
       .split("\n")
+      .map((line) => line.replace(/っ/g, ` っ`).trim())
       .map((line) => line.replace(/ー/g, "｜").trim())
       .map((line) => line.replace(/、/g, "︑").trim())
       .map((line) => line.replace(/。/g, "︒").trim())
