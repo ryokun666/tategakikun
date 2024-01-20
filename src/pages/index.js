@@ -27,8 +27,8 @@ export default function Home() {
             <Image
               src="/tategaki_main.png"
               alt="たてがきくん"
-              width={500}
-              height={250}
+              width={1920}
+              height={960}
             />
           </h1>
           {/* 広告3 */}
