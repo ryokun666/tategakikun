@@ -26,6 +26,7 @@ const CopyToClipboardButton = ({ str, setIsPopupVisible }) => {
         open={open}
         onClose={() => setOpen(false)}
         autoHideDuration={2000}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
         message="コピー成功！！！"
       />
     </>
