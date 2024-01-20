@@ -4,7 +4,6 @@ const nextConfig = {
   experimental: {
     optimizeFonts: true,
   },
-  assetPrefix: "/tategakikun",
 };
 
 module.exports = nextConfig
