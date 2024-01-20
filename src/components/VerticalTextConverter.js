@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import styles from "@/styles/convertButton.module.css";
 import TextBoxWithCopyButton from "@/components/TextBoxWithCopyButton";
 
-function VerticalTextConverter({setIsPopupVisible}) {
+function VerticalTextConverter(setIsPopupVisible) {
   const [boxLn, setBoxLn] = useState([]);
   const [str, setStr] = useState([]);
   const [lineCount, setLineCount] = useState(0);
@@ -39,7 +39,9 @@ function VerticalTextConverter({setIsPopupVisible}) {
         const char = newStr[i][j] || "　";
         line += char + " ";
       }
-      newCovStr.push(line);
+      if (j < newMaxLn - 1 || line.trim() !== "") {
+        newCovStr.push(line);
+      }
     }
     setCovStr(newCovStr);
   }

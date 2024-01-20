@@ -48,7 +48,7 @@ export default function Home() {
             }}
           >
             <a
-              href="https://px.a8.net/svt/ejp?a8mat=3TLRSP+B0IPO2+407E+65U41"
+              href="https://px.a8.net/svt/ejp?a8mat=3YYLXW+AJ954I+5BR2+5YZ75"
               rel="nofollow"
             >
               <img
@@ -56,7 +56,7 @@ export default function Home() {
                 width="300"
                 height="250"
                 alt=""
-                src="https://www26.a8.net/svt/bgt?aid=231123193666&wid=001&eno=01&mid=s00000018689001035000&mc=1"
+                src="https://www22.a8.net/svt/bgt?aid=240120212637&wid=001&eno=01&mid=s00000024851001003000&mc=1"
               />
             </a>
           </div>
@@ -72,49 +72,28 @@ export default function Home() {
 
           <VerticalTextConverter setIsPopupVisible={setIsPopupVisible} />
         </div>
-        {/* 広告1 */}
-        <div>
+        <div style={{ marginBottom: "150px" }}>
+          {/* 広告2 */}
           <a
-            href="https://px.a8.net/svt/ejp?a8mat=3TLR08+D0K5V6+2PEO+1HUVDT"
+            href="https://px.a8.net/svt/ejp?a8mat=3TLR08+D0K5V6+2PEO+1I4QBL"
             rel="nofollow"
           >
             <img
               border="0"
-              width="320"
-              height="50"
+              width="300"
+              height="250"
               alt=""
-              src="https://www22.a8.net/svt/bgt?aid=231122168787&wid=001&eno=01&mid=s00000012624009046000&mc=1"
+              src="https://www28.a8.net/svt/bgt?aid=231122168787&wid=001&eno=01&mid=s00000012624009092000&mc=1"
             />
           </a>
           <img
             border="0"
             width="1"
             height="1"
-            src="https://www12.a8.net/0.gif?a8mat=3TLR08+D0K5V6+2PEO+1HUVDT"
+            src="https://www14.a8.net/0.gif?a8mat=3TLR08+D0K5V6+2PEO+1I4QBL"
             alt=""
           ></img>
         </div>
-
-        {/* 広告2 */}
-        <a
-          href="https://px.a8.net/svt/ejp?a8mat=3TLR08+D0K5V6+2PEO+1I4QBL"
-          rel="nofollow"
-        >
-          <img
-            border="0"
-            width="300"
-            height="250"
-            alt=""
-            src="https://www28.a8.net/svt/bgt?aid=231122168787&wid=001&eno=01&mid=s00000012624009092000&mc=1"
-          />
-        </a>
-        <img
-          border="0"
-          width="1"
-          height="1"
-          src="https://www14.a8.net/0.gif?a8mat=3TLR08+D0K5V6+2PEO+1I4QBL"
-          alt=""
-        ></img>
       </main>
       {/* 広告ポップアップ */}
       {isPopupVisible && (
