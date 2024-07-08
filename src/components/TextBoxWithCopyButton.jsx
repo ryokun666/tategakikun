@@ -11,9 +11,8 @@ const CopyToClipboardButton = ({ str, setIsPopupVisible }) => {
     }
     setOpen(true);
     if (typeof window === "object") {
-      navigator.clipboard.writeText(
-        document.getElementById("resultText").innerText
-      );
+      const textToCopy = str.join("\n");
+      navigator.clipboard.writeText(textToCopy);
     }
   };
 
