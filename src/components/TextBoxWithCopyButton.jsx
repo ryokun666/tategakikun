@@ -2,7 +2,7 @@ import { Button, Snackbar } from "@mui/material";
 import { useState } from "react";
 import styles from "@/styles/TextBoxWithCopyButton.module.css";
 
-const CopyToClipboardButton = ({ str, setIsPopupVisible }) => {
+const CopyToClipboardButton = ({ str, setIsPopupVisible, addSpace }) => {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -11,7 +11,10 @@ const CopyToClipboardButton = ({ str, setIsPopupVisible }) => {
     }
     setOpen(true);
     if (typeof window === "object") {
-      const textToCopy = str.join("\n");
+      let textToCopy = str.join("\n");
+      if (addSpace) {
+        textToCopy = str.join("\n\n");
+      }
       navigator.clipboard.writeText(textToCopy);
     }
   };
