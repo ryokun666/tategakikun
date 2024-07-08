@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import styles from "@/styles/convertButton.module.css";
-import TextBoxWithCopyButton from "@/components/TextBoxWithCopyButton";
+import CopyToClipboardButton from "@/components/TextBoxWithCopyButton";
 
-function VerticalTextConverter(setIsPopupVisible) {
+function VerticalTextConverter() {
   const [boxLn, setBoxLn] = useState([]);
   const [str, setStr] = useState([]);
   const [lineCount, setLineCount] = useState(0);
   const [maxLn, setMaxLn] = useState(0);
   const [covStr, setCovStr] = useState([]);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   function handleInputChange(event) {
     const input = event.target.value;
@@ -77,7 +78,7 @@ function VerticalTextConverter(setIsPopupVisible) {
           <p key={i}>{line}</p>
         ))}
       </div>
-      <TextBoxWithCopyButton
+      <CopyToClipboardButton
         str={covStr}
         setIsPopupVisible={setIsPopupVisible}
       />

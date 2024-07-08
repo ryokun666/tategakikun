@@ -4,8 +4,11 @@ import styles from "@/styles/TextBoxWithCopyButton.module.css";
 
 const CopyToClipboardButton = ({ str, setIsPopupVisible }) => {
   const [open, setOpen] = useState(false);
+
   const handleClick = () => {
-    setIsPopupVisible(true);
+    if (typeof setIsPopupVisible === "function") {
+      setIsPopupVisible(true);
+    }
     setOpen(true);
     if (typeof window === "object") {
       navigator.clipboard.writeText(
